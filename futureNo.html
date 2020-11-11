@@ -1,0 +1,332 @@
+<!DOCTYPE html>                                                          <!-- IDEA: look up "frosted glass" or "MS Acrylic." Also see if the nav bar can move with page -->
+<html>
+  <head>
+    <link rel="shortcut icon" href="img/thumbnail.png" type="image/png"> <!-- need a new favicon icon --> <!-- I DO NOT HAVE ONE RIGHT NOW -->
+    <link rel="icon" href="img/thumbnail.png" type="image/x-icon" /> <!-- Get rid of this if not working -->   
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet"> <!--Roboto Bold -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/component.css">
+    <meta charset="UTF-8">
+    <title>Computer Science</title> <!-- Can change -->
+  </head>
+    
+  <body class="animated fadeIn bigTest" style="background-image: url(img/!!gradTest2Sideways.png); background-attachment: scroll; background-size: cover; overflow-x: hidden;">
+      
+
+	  <!-- <div class="spaceBig"></div> -->
+	  
+          <div class="mainColor"> <!-- wow animated fadeIn slow -->
+                <ul class="ul">
+                    <li class="li"><a href="index.html">Home</a></li>
+                    <li class="li dropdown">
+                        <a href="occupations.html" class="dropbtn">Occupations</a> <!-- MAKE SURE THE "#" ARE LINKS + the ones above and below -->
+                        <div class="dropdown-content">                               <!-- change color scheme later in CSS -->
+                            <a href="software.html">Software</a>                                 <!-- also drop-down animations -->
+                            <a href="hardware.html">Hardware</a>                                 <!-- maybe make only the text change when moused over ----------------------- -->
+                        </div>
+                    </li>
+                    <li class="dropdown li">
+                        <a href="javascript:void(0)" class="dropbtn">The Future</a>
+                        <div class="dropdown-content">
+                            <a href="#">Big Data and AI</a>
+                            <a href="#">Everyday Life</a>
+                            <a href="#">Importance</a>
+                        </div>
+                    </li>
+                  </ul>
+              </div>
+      
+      
+      <!--
+      /* Really light: #f4f3f9 */
+      /* Middle: #cdc7e4 */
+      /* Darker: #311B92 */
+      /* Test color for gradient: #3f2897 */
+      /* Test color for gradient (a little darker): #2c1c73 */ -->
+      
+      
+      <div id=toTop> <!-- --------------------------------------------------------- HUGE DEV FOR WHOLE PAGE -------------------------------------- -->
+      
+          <div class="spaceFuture" style="background-color: firebrick;"></div>
+          
+          
+          
+                    
+
+          <div class="spaceFuture"> <!-- The three title divs -->
+              
+              <div class="cardNoHover animated fadeInRightBig firstOne" style="color: #322a55; background-color: #cdc7e4; box-shadow: 0 0 0 0; float: right; width: 60%; margin-left: auto; margin-right: 10%; height: 5em;">
+                <h1 class="center">The Future of Computer Science</h1>
+              </div>
+              
+              <div class="cardNoHover animated fadeInLeftBig secondOne" style="color: #cdc7e4; background-color: #322a55; box-shadow: 0 0 0 0; float: left; width: 50%; margin-left: 10%; margin-right: auto; margin-top: -1.5em; height: 5em;">
+                    <h1 class="center">How Computer Science is</h1>
+              </div>
+
+              <div class="cardNoHover animated fadeInRightBig thirdOne" style="color: #9882f2; background-color: #4c3b93; box-shadow: 0 0 0 0; float: right; width: 40%; margin-left: auto; margin-right: 20%; margin-top: -1.5em; height: 5em;">
+                  <div class="center"><h1 class="" style=""><span class="animated" style="overflow: hidden;" id=container>◓◆◳◣▤</span><div class="center" style="display: inline;"></div><span style="position: absolute;">Tomorrow</span></h1></div>
+              </div>
+              
+              
+              
+              
+              
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- WORRY ABOUT LATER                                             FOOTER - LATER
+	  <footer>
+		<p>Created by: Joey Hilber</p>
+  		<p>Contact information: <a href="mailto:joeyhilber@gmail.com">joeyhilber@gmail.com</a>.</p>
+	  </footer>
+	  -->
+  </body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Scripts here -->
+	
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+    <!-- <script src="js/jquery.shuffleLetters.js"></script>
+    <script src="js/script.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script>/**
+         * @name		Shuffle Letters
+         * @author		Martin Angelov
+         * @version 	1.0
+         * @url			http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
+         * @license		MIT License
+         * @url-extra   http://jsfiddle.net/4a0zwfcq/1/  --helped me with code set-up
+         */
+
+        (function($){
+
+            $.fn.shuffleLetters = function(prop){
+
+                var options = $.extend({
+                    "step"		: 15,			// How many times should the letters be changed
+                    "fps"		: 20,			// Frames Per Second
+                    "text"		: "", 			// Use this text instead of the contents
+                    "callback"	: function(){}	// Run once the animation is complete
+                },prop)
+
+                return this.each(function(){
+
+                    var el = $(this),
+                        str = "";
+
+
+                    // Preventing parallel animations using a flag;
+
+                    if(el.data('animated')){
+                        return true;
+                    }
+
+                    el.data('animated',true);
+
+
+                    if(options.text) {
+                        str = options.text.split('');
+                    }
+                    else {
+                        str = el.text().split('');
+                    }
+
+                    // The types array holds the type for each character;
+                    // Letters holds the positions of non-space characters;
+
+                    var types = [],
+                        letters = [];
+
+                    // Looping through all the chars of the string
+
+                    for(var i=0;i<str.length;i++){
+
+                        var ch = str[i];
+
+                        if(ch == " "){
+                            types[i] = "space";
+                            continue;
+                        }
+                        else if(/[a-z]/.test(ch)){
+                            types[i] = "lowerLetter";
+                        }
+                        else if(/[A-Z]/.test(ch)){
+                            types[i] = "upperLetter";
+                        }
+                        else {
+                            types[i] = "symbol";
+                        }
+
+                        letters.push(i);
+                    }
+
+                    el.html("");			
+
+                    // Self executing named function expression:
+
+                    (function shuffle(start){
+
+                        // This code is run options.fps times per second
+                        // and updates the contents of the page element
+
+                        var i,
+                            len = letters.length, 
+                            strCopy = str.slice(0);	// Fresh copy of the string
+
+                        if(start>len){
+
+                            // The animation is complete. Updating the
+                            // flag and triggering the callback;
+
+                            el.data('animated',false);
+                            options.callback(el);
+                            return;
+                        }
+
+                        // All the work gets done here
+                        for(i=Math.max(start,0); i < len; i++){
+
+                            // The start argument and options.step limit
+                            // the characters we will be working on at once
+
+                            if( i < start+options.step){
+                                // Generate a random character at thsi position
+                                strCopy[letters[i]] = randomChar(types[letters[i]]);
+                            }
+                            else {
+                                strCopy[letters[i]] = "";
+                            }
+                        }
+
+                        el.text(strCopy.join(""));
+
+                        setTimeout(function(){
+
+                            shuffle(start+1);
+
+                        },1000/options.fps);
+
+                    })(-options.step);
+
+
+                });
+            };
+
+            function randomChar(type){
+                var pool = "◥■▷◯◈◢□●▧▣▲◹◧►▟▛⇽⇾★♥✕";
+
+                /* if (type == "lowerLetter"){
+                    pool = "abcdefghijklmnopqrstuvwxyz0123456789";
+                }
+                else if (type == "upperLetter"){
+                    pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                }
+                else if (type == "symbol"){
+                    pool = ",.?/\\(^)![]{}*&^%$#'\"";
+                } */
+
+                var arr = pool.split('');
+                return arr[Math.floor(Math.random()*arr.length)];
+            }
+
+        })(jQuery);
+
+
+
+        $(function(){
+
+            var container = $("#container")
+
+            container.shuffleLetters();
+
+            setTimeout(function(){
+
+                // Shuffle the container with custom text
+                container.shuffleLetters({
+                    "text": "◥■▷◯",
+                });
+                    setTimeout(function() {
+                        container.shuffleLetters({
+                            "text": "◈◢□●▧",
+                        });
+                        setTimeout(function() {
+                            container.shuffleLetters({
+                                "text": "Shaping",
+                            })
+                            /* setTimeout(function() {
+                                container.shuffleLetters({
+                                    "text": "▣▲◹◧►",
+                                })
+                            }, 2000); */
+                        }, 2000);
+                    }, 2000);		
+            },2000);
+
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+</html>

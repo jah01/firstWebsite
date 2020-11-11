@@ -1,0 +1,130 @@
+<!DOCTYPE html>                                                          <!-- IDEA: look up "frosted glass" or "MS Acrylic." Also see if the nav bar can move with page -->
+<html>
+  <head>
+    <link rel="shortcut icon" href="img/thumbnail.png" type="image/png"> <!-- need a new favicon icon --> <!-- I DO NOT HAVE ONE RIGHT NOW -->
+    <link rel="icon" href="img/thumbnail.png" type="image/x-icon" /> <!-- Get rid of this if not working -->   
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet"> <!--Roboto Bold -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <title>Computer Science</title> <!-- Can change -->
+  </head>
+    
+  <body class="animated fadeIn bigTest" style="background-image: url(img/!!gradUnknown.png); background-attachment: scroll; background-size: cover; overflow-x: hidden; height: 100%;">
+      
+
+	  <!-- <div class="spaceBig"></div> -->
+	  
+      <div class="mainColor"> <!-- wow animated fadeIn slow -->
+		<ul class="ul">
+			<li class="li"><a href="index.html">Home</a></li>
+			<li class="li dropdown">
+				<a href="occupations.html" class="dropbtn">Occupations</a> <!-- MAKE SURE THE "#" ARE LINKS + the ones above and below -->
+				<div class="dropdown-content">                               <!-- change color scheme later in CSS -->
+					<a href="software.html">Software</a>                                 <!-- also drop-down animations -->
+					<a href="hardware.html">Hardware</a>                                 <!-- maybe make only the text change when moused over -->
+				</div>
+			</li>
+            <li class="li"><a href="javascript:void(0)">Languages</a></li>
+			<li class="li"><a href="future.html">Future</a></li>
+		  </ul>
+	  </div>
+      
+
+
+	  <!-- <div class="spaceBig"></div> -->
+	  
+      <!--
+      /* Really light: #f4f3f9 */
+      /* Middle: #cdc7e4 */
+      /* Darker: #311B92 */
+      /* Test color for gradient: #3f2897 */
+      /* Test color for gradient (a little darker): #2c1c73 */ -->
+      
+	  <h1 style="color: #cdc7e4; font-size: 600%; height: auto;" class="center">Languages in Computer Science</h1>
+      <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">Java</h2>
+          <img src="img/java.png" style="width: 150px; height: 150px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">Java is very popular among programmers and is used in software applications such as Android apps and big data technologies. It is also a great beginner language.</h3>
+      </div>
+      <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">Python</h2>
+          <img src="img/pythinn.png" style="width: 150px; height: 150px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">Python is very similar to Java and is much simpler to learn. It is also used for beginners, and is rising in demand in the job market. Python is great for backend developement and data analysis.</h3>
+      </div>
+      <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">Kotlin</h2>
+          <img src="img/kotlin.png" style="width: 150px; height: 150px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">Kotlin is used for Android applications. It is a mix between the funtionality of Java and simplicity of Python. It can also be used for browsers.</h3>
+      </div>
+      <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">Swift</h2>
+          <img src="img/swift.png" style="width: 125px; height: 125px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">Swift is a programming language specifically designed for iOS, macOS, watchOS, and tvOS. It was developed by Apple. Developers are in high demand.</h3>
+      </div>
+      <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">C++</h2>
+          <img src="img/cpp.png" style="width: auto; height: 125px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">C++ is an object oriented programming language created for operating systems and even hardware. C++ is currently not in high demand anymore and faces replacement from other languages such as Go and Rust.</h3>
+      </div>
+	  <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">SQL</h2>
+          <img src="img/bigData1.png" style="width: auto; height: 125px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">SQL deals with database technologies for large businesses. It is used for big data collection and keeping data organized.</h3>
+      </div>
+      <div class="cardNoHover wow animated fadeInUp" style="background-color: #f4f3f9; width: 90%; margin-left: 5%; position: relative; height: 200px; margin-bottom: 20px;">
+          <h2 class="center" style="">JavaScript</h2>
+          <img src="img/js.png" style="width: auto; height: 125px; position: absolute; top: 50px; left: 5%">
+          <h3 style="float: right; padding-right: 2.5%; width: 75%; text-align: left;">JavaScript is used to make websites more interactive. It is built into many web browsers and is added to almost every website.</h3>
+      </div>
+	  
+	  
+	  <div style="height: 14em;"></div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- WORRY ABOUT LATER                                             FOOTER - LATER
+	  <footer>
+		<p>Created by: Joey Hilber</p>
+  		<p>Contact information: <a href="mailto:joeyhilber@gmail.com">joeyhilber@gmail.com</a>.</p>
+	  </footer>
+	  -->
+  </body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Scripts here -->
+	
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+    
+
+</html>

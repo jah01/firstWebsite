@@ -1,0 +1,563 @@
+/* Really light: #f4f3f9 */
+/* Middle: #cdc7e4 */
+/* Darker: #311B92 */
+/* Test color for gradient: #3f2897 */
+/* Test color for gradient (a little darker): #2c1c73 */
+
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+}
+
+body {
+    background: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.para {
+    text-indent: 50px;
+}
+
+a {
+	color: inherit;
+} 
+
+.center {
+	text-align: center;
+}
+
+.centerDiv{
+     margin: 0 auto;
+     width: 90%;
+}
+
+
+.white {
+	color: white;
+}
+
+.space {
+	margin: 5%;
+}
+
+.spaceCard {
+	margin-bottom: 500px;
+}
+
+.spaceMed {
+	margin: 35%;
+}
+
+.spaceKindaBig {
+	margin: 600px;
+}
+
+.spaceBig {
+	margin: 1150px;
+}
+
+.bigText {
+font-family: 'Roboto', sans-serif;
+font-size: 600%;
+}
+
+/*
+.kindaBigText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 400%;
+} */
+
+.medText {
+	font-family: 'Roboto', sans-serif;
+	font-size: 250%;
+}
+
+.roboto {
+font-family: 'Roboto', sans-serif;
+font-size: 40px;
+}
+
+.fullScreen { /* makes it actually full screen */
+	position: relative;
+	top: 0px;
+ 	left: 0px;
+}
+
+.big { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+	margin-top: -1px;
+	background-repeat: no-repeat;
+
+}
+
+/* Beginning of the drop-down menu */
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4f3f9;
+	/* position: fixed; /* 59-61 makes the nav bar follow scrolling, but RUINS THE DROP-DOWN MENU ----------------- FIX DROP DOWN MENU */
+    top: 0;
+    width: 100%;
+}
+
+.li {
+	color:  #311B92;
+    float: left;
+}
+
+/* ul.occBullet {
+    color: #000;
+    float: right;
+} */
+
+.li a, .dropbtn {
+    display: inline-block;
+    color:  #311B92;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li a:hover, .dropdown:hover .dropbtn {
+    background-color: #cdc7e4;
+    border-radius: 2px;
+}
+
+.li.dropdown {
+    display: inline-block;
+	z-index: 20;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	/* background: rgba(49, 27, 146, 0.05) url(img/white.png) center no-repeat; */
+    background-color: #f4f3f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20;
+}
+
+.dropdown-content a {
+    color: #311B92;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	z-index: 20;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(49, 27, 146, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    border-radius: 2px;
+    display: block;
+}
+
+/* End of the drop-down menu */
+
+
+
+
+
+/* Start of typewriter animation */                                              /* IS THIS OK TO USE IF THE WEBSITE IS SUPPOSED TO BE CLEAN? */
+/* <p class="line-1 anim-typewriter">Occupations, Languages, and Why Computer Science is the Future</p> */          /* Example code for html here */
+/* Google Fonts */
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
+
+/* Global */                                                                                                 /*
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,0);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */ /*
+.anim-typewriter{
+  animation: typewriter 3.5s steps(50) 2s 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite normal;
+}
+@keyframes typewriter{ /* how far the typewriter goes */                                                     /*
+  from{width: 0;}
+  to{width: 34em;}
+}
+/* @keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+} */
+/* End of typewriter animation */
+
+
+
+/* Start of card from W3Schools */
+.card, .cardNoHover {
+    box-shadow: 0 4px 8px 0 rgba(49, 27, 146, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+	/* height: 800px; /* check rowDone --------------------- got rid of it because of multiple pages ---------- */
+	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	/* background-color: rgba(49, 27, 146, 0.05);
+	background-image: url(img/thumbnail.png);
+	/* background-position: right;
+	background-repeat: no-repeat; */
+	/* background: rgba(49, 27, 146, 0.05) url(img/dribbble0.png) left top no-repeat; */
+}
+
+.card:hover {
+    box-shadow: 0 12px 48px 0 rgba(0, 0, 0, .75);
+    /* rgba(49, 27, 146, 0.2); */
+}
+
+.cardNoHover {
+    box-shadow: 0 6px 6px 6px rgba(0, 0, 0, .25);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 6px 48px;
+}
+
+.rowDone {
+	padding-bottom: 850px; /* check card at the start of card */
+}
+
+.rowDoneSmall {
+    padding-bottom: 50px;
+}
+
+/* End of card */
+
+.wordSpace { /* important one */
+    margin: 10px;
+    overflow: hidden;
+    height: 200px;
+}
+
+/* CURRENTLY NOT USING
+.cardImg {
+    width: 45%;
+    height: 400px;
+    background: #f4f3f9 url(img/teamworkCrop3.png) top no-repeat; 
+    background-size: contain;
+} */
+
+/*
+.spaceButton {
+    margin-bottom: 10%;
+} */
+
+/* 
+.buttonTest {
+    margin-top: 0;
+}
+
+.btnTest {
+    margin-top 700px;
+} */
+
+/* Start of button within card - not using at the moment, or maybe at all from W3Schools */
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonEdit {
+    width: 80%;
+}
+/* End of button within card */
+
+/* .test0 {
+    height: 1000px;
+    background-color: deeppink
+}
+
+/* .animationTest {
+    margin-top: 100px;
+} */
+
+.allCardsMain {
+    overflow: hidden;
+}
+
+.smallPadding {
+    padding-top: 25px;
+}
+
+
+
+
+/* -------------------------------------------- SOFTWARE AND HARDDWARE PAGE -------------------------------------------------- W3Schools helped with this */
+.sidenav {
+    height: 60%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: 0;
+    background-color: #cdc7e4;
+    overflow-x: hidden;
+    overflow-y: auto; /* probably not gonna ened this -- depends on how many topics I have */
+    padding-top: 48px;
+    /* padding-left: 20px; */
+    border-radius: 0 5px 5px 0;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 6px 6px 6px rgba(0, 0, 0, .25);
+}
+
+.notSidenav { /* pretty much the text */
+    /* margin-left: 200px; /* https://stackoverflow.com/questions/2637696/how-to-place-div-side-by-side */
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 4px;
+}
+
+.backgroundNSN { /* bigger one ---------------------------------------------------------------------------------------------------------------------- */
+    margin-left: 0;
+    padding-left: 0;
+    background-color: #f4f3f9; /* rgba(244, 243, 249, .5);*/
+    opacity: 0;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 0;
+}
+
+.listButton {
+    text-decoration: none;
+    font-family: inherit;
+    border-radius: 8px;
+    border-color: #311B92;
+	color: #311B92;
+    font-size: inherit;
+    width: 160px;
+    height: 50px;
+    background-color: inherit;
+    border: hidden;
+    text-align: center;
+    text-decoration: none;
+    /* border: solid #1f628d 4px; */
+}
+
+.listButton:hover {
+    color: #130d2a;
+    border: solid #130d2a 2px;
+    cursor: pointer;
+}
+
+.spaceTiny {
+    height: 12px;
+}
+
+.spaceSmaller {
+    height: 24px;
+}
+
+.spaceNotSmall {
+    height: 48px;
+}
+
+.spaceFuture {
+    height: 1em;
+}
+
+/* .listButton a {
+    background-color: cyan;
+    text-decoration: none;
+    display: block;
+    min-width: 80px;
+    padding: 7.5px 0;
+    /* padding: 10px 20%; */
+
+.listButton:focus { /* very useful for eliminating the blue outlines on links */
+    outline: none;
+}
+
+/* ::-webkit-scrollbar {    -------------------------------------- for no scrollbar if you make your own ---------------------------------------------------
+    display: none; 
+} */
+
+.softwareCard {
+    background-color: #f4f3f9;
+    margin-left: 300px;
+    margin-right: 100px;
+    width: auto;
+}
+
+#testsc1 {
+    overflow-x: hidden;
+}
+
+#testsc2 {
+    overflow-y: auto;
+}
+
+.noTouch { /* from tw16 and edited by Karmic Coder on StackOverflow: https://stackoverflow.com/questions/6900124/how-to-make-certain-text-not-selectable-with-css */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#clip_0 {
+    stroke-width: 40px;
+}
+
+
+/* The End */
+
+
+.sunOpacity {
+    animation: rise 10s;
+}
+
+@keyframes rise {
+    0% {
+        opacity: 0;
+    }
+    
+    /* 50%{
+        opacity: 0;
+    } */
+    
+    60% {
+        opacity: 0;
+    }
+    
+    /* 80% {
+        opacity: .25;
+    } */
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.colorChange {
+    animation: colorChange 8s;
+}
+
+@keyframes colorChange {
+    
+    0% {
+        color: black;
+    }
+    
+    20% {
+        color: #020460;
+    }
+    
+    30% {
+        color: #311B92;
+    }
+    
+    50% {
+        color: #600202;
+    }
+    
+    60% {
+        color: #600234;
+    }
+    
+    75% {
+        color: #b54800;
+    }
+    
+    90% {
+        color: #b57800;
+    }
+    
+    100% {
+        color: yellow;
+    }
+    
+    
+    /*
+    
+    
+    60% {
+        color: #600234;
+    }
+    
+    70% {
+        color: #600202;
+    }
+    
+    80%{
+        color: #311B92;
+    }
+    
+    90% {
+        color: #020460;
+    }
+    
+    100% {
+        color: black;
+    } */
+
+}
+
+.byeNow:target {
+    display: none;
+}
